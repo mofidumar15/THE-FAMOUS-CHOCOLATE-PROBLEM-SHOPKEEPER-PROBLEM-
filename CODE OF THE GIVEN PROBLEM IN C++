@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int x, y, z;
+  for (x = 0; x <= 100; ++x) {
+    for (y = 0; y <= 100 - x; ++y) {
+      z = 100 - x - y;
+      if (3 * x + 0.5 * y + 10 * z == 100) {
+        cout << "no.of chocolates price at ₹3: " << x << endl;
+        cout << "No. of chocolates price at ₹0.5: " << y << endl;
+        cout << "No. of chocolates price at ₹10: " << z << endl;
+        cout << "---------------------------------------------" << endl;
+      }
+    }
+  }
+  return 0;
+}
